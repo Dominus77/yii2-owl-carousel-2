@@ -28,6 +28,7 @@ Usage
 -----
 
 Once the extension is installed, simply use it in your code by  :
+
 Basic
 -----
 [Demo](https://owlcarousel2.github.io/OwlCarousel2/demos/basic.html)
