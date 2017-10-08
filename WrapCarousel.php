@@ -32,6 +32,11 @@ class WrapCarousel extends Widget
     /**
      * @var string
      */
+    public $clientScript = '';
+
+    /**
+     * @var string
+     */
     public $content = '';
 
     /**
@@ -48,6 +53,7 @@ class WrapCarousel extends Widget
      * @var boolean whether to hide the carousel when the body content is empty. Defaults to true.
      */
     public $hideOnEmpty = true;
+
     private $_beginTag;
     private $_id;
 

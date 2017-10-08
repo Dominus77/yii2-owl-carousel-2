@@ -29,12 +29,31 @@ class Carousel extends Widget
      */
     public $tag = 'div';
 
+    /**
+     * @var array the HTML attributes for the carousel container tag.
+     */
     public $containerOptions = [];
+
+    /**
+     * @var string
+     */
     public $items = '';
+
+    /**
+     * @var array
+     */
     public $clientOptions = [];
+    /**
+     * @var string
+     */
     public $clientScript = '';
+
     private $_id;
 
+    /**
+     * Initializes the widget.
+     * This renders the open tags needed by the carousel.
+     */
     public function init()
     {
         parent::init();
