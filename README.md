@@ -1,7 +1,7 @@
 yii2-owl-carousel-2
 ======
 
-Renders a [Owl Carousel 2](https://github.com/OwlCarousel2/OwlCarousel2) widget for Yii2.
+Renders a [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) widget for Yii2.
 
 
 Installation
