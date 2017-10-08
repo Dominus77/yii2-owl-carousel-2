@@ -31,7 +31,7 @@ Once the extension is installed, simply use it in your code by  :
 
 Basic
 -----
-Variant 1
+Variant 1:
 ```php
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
@@ -56,7 +56,7 @@ Variant 1
     ],
 ]); ?>
 ```
-Items:
+Items
 ```
 <div class="item"><h4>1</h4></div>
 <div class="item"><h4>2</h4></div>
@@ -72,7 +72,7 @@ Items:
 <div class="item"><h4>12</h4></div>
 ```
 
-Variant 2, Wrap Carousel
+Variant 2, Wrap Carousel:
 
 ```
 <?php \dominus77\owlcarousel2\WrapCarousel::begin([
