@@ -19,26 +19,29 @@ class Carousel extends Widget
     const THEME_DEFAULT = 'default';
     const THEME_GREEN = 'green';
 
+    /**
+     * @var string
+     */
     public $theme;
-    public $container = 'div';
-    public $containerOptions = [
-        'tag' => 'div',
-        'options' => [
-            'class' => 'owl-carousel owl-theme',
-        ],
-    ];
+
+    /**
+     * @var string
+     */
+    public $tag = 'div';
+
+    public $containerOptions = [];
     public $items = '';
     public $clientOptions = [];
     public $clientScript = '';
-    public $id;
+    private $_id;
 
     public function init()
     {
         parent::init();
-        $this->id = $this->getId();
-        $this->containerOptions['options'] = ArrayHelper::merge([
-            'id' => $this->id,
-        ], $this->containerOptions['options']);
+        $this->_id = $this->getId();
+        $this->containerOptions['id'] = $this->_id;
+        $this->containerOptions['class'] = (isset($this->containerOptions['class']) && !empty($this->containerOptions['class'])) ?
+            'owl-carousel owl-theme ' . $this->containerOptions['class'] : 'owl-carousel owl-theme';
         $this->theme = $this->theme ? $this->theme : self::THEME_DEFAULT;
     }
 
@@ -46,9 +49,9 @@ class Carousel extends Widget
     {
         if (!empty($this->items)) {
             $this->registerAssets();
-            echo Html::beginTag($this->containerOptions['tag'], $this->containerOptions['options']) . PHP_EOL;
+            echo Html::beginTag($this->tag, $this->containerOptions) . PHP_EOL;
             echo $this->items . PHP_EOL;
-            echo Html::endTag($this->containerOptions['tag']) . PHP_EOL;
+            echo Html::endTag($this->tag) . PHP_EOL;
         }
     }
 
@@ -79,14 +82,14 @@ class Carousel extends Widget
 
         if (!empty($this->clientScript)) {
             $script = new JsExpression("
-                var owl = $('#{$this->id}');
+                var owl = $('#{$this->_id}');
                 owl.owlCarousel({$options});
             ");
             $view->registerJs($script);
             $view->registerJs($this->clientScript);
         } else {
             $script = new JsExpression("
-                $('#{$this->id}').owlCarousel({$options});
+                $('#{$this->_id}').owlCarousel({$options});
             ");
             $view->registerJs($script);
         }

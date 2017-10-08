@@ -31,11 +31,13 @@ Once the extension is installed, simply use it in your code by  :
 
 Basic
 -----
-[Demo](https://owlcarousel2.github.io/OwlCarousel2/demos/basic.html)
+Variant 1
 ```php
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
     //'theme' => \dominus77\owlcarousel2\Carousel::THEME_GREEN, // THEME_DEFAULT, THEME_GREEN
+    //'tag' => 'div', // container tag name, default div
+    //'containerOptions' => [/* ... */], // container html options
     'clientOptions' => [
         'loop' => true,
         'margin' => 10,
@@ -70,9 +72,51 @@ Items:
 <div class="item"><h4>12</h4></div>
 ```
 
+Variant 2, Wrap Carousel
+
+```
+<?php \dominus77\owlcarousel2\WrapCarousel::begin([
+    //'theme' => \dominus77\owlcarousel2\Carousel::THEME_GREEN, // THEME_DEFAULT, THEME_GREEN
+    //'tag' => 'div', // container tag name, default div
+    //'containerOptions' => [/* ... */], // container html options
+    'clientOptions' => [
+        'loop' => true,
+        'margin' => 10,
+        'nav' => true,
+        'responsive' => [
+            0 => [
+                'items' => 1,
+            ],
+            600 => [
+                'items' => 3,
+            ],
+            1000 => [
+                'items' => 5,
+            ],
+        ],
+    ],
+]); ?>
+
+    <!-- begin Items -->
+    <div class="item"><h4>1</h4></div>
+    <div class="item"><h4>2</h4></div>
+    <div class="item"><h4>3</h4></div>
+    <div class="item"><h4>4</h4></div>
+    <div class="item"><h4>5</h4></div>
+    <div class="item"><h4>6</h4></div>
+    <div class="item"><h4>7</h4></div>
+    <div class="item"><h4>8</h4></div>
+    <div class="item"><h4>9</h4></div>
+    <div class="item"><h4>10</h4></div>
+    <div class="item"><h4>11</h4></div>
+    <div class="item"><h4>12</h4></div>
+    <!-- end Items -->
+
+<?php \dominus77\owlcarousel2\WrapCarousel::end() ?>
+```
+
 Responsive
 ----------
-[Demo](https://owlcarousel2.github.io/OwlCarousel2/demos/responsive.html)
 ```
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
@@ -101,7 +145,6 @@ Responsive
 
 Animate
 -------
-[Demo](https://owlcarousel2.github.io/OwlCarousel2/demos/animate.html)
 ```
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
@@ -118,7 +161,6 @@ Animate
 
 Autoplay
 --------
-[Demo](https://owlcarousel2.github.io/OwlCarousel2/demos/autoplay.html)
 ```
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
@@ -144,7 +186,7 @@ Autoplay
 <a class="btn btn-primary stop">Stop</a>
 ```
 
-More Demo
+Demo
 -----
 Pleas, check the [Demos](https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html)
 
