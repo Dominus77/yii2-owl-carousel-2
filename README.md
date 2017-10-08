@@ -30,6 +30,7 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 Basic
 -----
+[Demo](https://owlcarousel2.github.io/OwlCarousel2/demos/basic.html)
 ```php
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
@@ -70,6 +71,7 @@ Items:
 
 Responsive
 ----------
+[Demo](https://owlcarousel2.github.io/OwlCarousel2/demos/responsive.html)
 ```
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
@@ -98,6 +100,7 @@ Responsive
 
 Animate
 -------
+[Demo](https://owlcarousel2.github.io/OwlCarousel2/demos/animate.html)
 ```
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
@@ -114,6 +117,7 @@ Animate
 
 Autoplay
 --------
+[Demo](https://owlcarousel2.github.io/OwlCarousel2/demos/autoplay.html)
 ```
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
@@ -139,9 +143,13 @@ Autoplay
 <a class="btn btn-primary stop">Stop</a>
 ```
 
+More Demo
+-----
+Pleas, check the [Demos](https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html)
+
 More Information
 -----
-Please, check the [Owl Carousel 2](https://github.com/OwlCarousel2/OwlCarousel2)
+Please, check the [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/)
 
 License
 -----
