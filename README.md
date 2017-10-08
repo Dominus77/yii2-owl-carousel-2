@@ -33,7 +33,7 @@ Basic
 ```php
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
-    'theme' => \dominus77\owlcarousel2\Carousel::THEME_DEFAULT, // THEME_DEFAULT, THEME_GREEN
+    //'theme' => \dominus77\owlcarousel2\Carousel::THEME_GREEN, // THEME_DEFAULT, THEME_GREEN
     'clientOptions' => [
         'loop' => true,
         'margin' => 10,
