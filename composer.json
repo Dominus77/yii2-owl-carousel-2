@@ -1,0 +1,23 @@
+{
+    "name": "dominus77/yii2-owl-carousel-2",
+    "description": "Renders a Owl Carousel 2 widget for Yii2.",
+    "type": "yii2-extension",
+    "keywords": ["dominus77","yii2","extension","widget","yii2-owl-carousel-2"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Alexey Schevchenko",
+            "email": "ivanovosity@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "bower-asset/owlcarousel2": ">= 2.2",
+        "daneden/animate.css": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "dominus77\\owlcarousel2\\": ""
+        }
+    }
+}

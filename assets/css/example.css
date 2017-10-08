@@ -1,0 +1,20 @@
+.owl-carousel {
+    margin: 2rem 0
+}
+
+.owl-carousel .item {
+    height: 10rem;
+    background: #4DC7A0;
+    padding: 1rem
+}
+
+.owl-carousel .item h2,
+.owl-carousel .item h4 {
+    color: #FFF;
+    font-weight: 400;
+    margin-top: 0rem
+}
+
+.owl-carousel .item-video {
+    height: 300px
+}
