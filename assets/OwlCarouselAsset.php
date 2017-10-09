@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
 class OwlCarouselAsset extends AssetBundle
 {
     public static $theme = 'default';
-    public $sourcePath = '@vendor/bower-asset/owlcarousel2/dist';
+    public $sourcePath = '@bower/owlcarousel2/dist';
 
     public $css = [];
     public $js = [];
