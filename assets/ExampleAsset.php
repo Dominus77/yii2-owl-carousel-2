@@ -10,6 +10,9 @@ use yii\web\AssetBundle;
  */
 class ExampleAsset extends AssetBundle
 {
-    public $sourcePath = '@dominus77/owlcarousel2/assets/css';
-    public $css = ['example.css'];
+    public function init()
+    {
+        $this->sourcePath = __DIR__ . '/css';
+        $this->css = ['example.css'];
+    }
 }
