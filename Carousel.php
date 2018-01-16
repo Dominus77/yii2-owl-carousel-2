@@ -43,6 +43,7 @@ class Carousel extends Widget
      * @var array
      */
     public $clientOptions = [];
+
     /**
      * @var string
      */
@@ -64,6 +65,9 @@ class Carousel extends Widget
         $this->theme = $this->theme ? $this->theme : self::THEME_DEFAULT;
     }
 
+    /**
+     * @inheritdoc
+     */
     public function run()
     {
         if (!empty($this->items)) {

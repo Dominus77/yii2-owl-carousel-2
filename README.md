@@ -1,12 +1,13 @@
-yii2-owl-carousel-2
-======
+# yii2-owl-carousel-2
+
+[![Latest Stable Version](https://poser.pugx.org/dominus77/yii2-owl-carousel-2/v/stable)](https://packagist.org/packages/dominus77/yii2-owl-carousel-2)
+[![License](https://poser.pugx.org/dominus77/yii2-owl-carousel-2/license)](https://github.com/Dominus77/yii2-owl-carousel-2/blob/master/LICENSE.md)
+[![Total Downloads](https://poser.pugx.org/dominus77/yii2-owl-carousel-2/downloads)](https://packagist.org/packages/dominus77/yii2-owl-carousel-2)
 
 Renders a [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) widget for Yii2.
 
 
-Installation
-------------
-
+## Installation
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 Either run
@@ -24,13 +25,10 @@ or add
 to the require section of your `composer.json` file.
 
 
-Usage
------
-
+## Usage
 Once the extension is installed, simply use it in your code by  :
 
-Basic
------
+## Basic
 Variant 1:
 ```php
 <?= \dominus77\owlcarousel2\Carousel::widget([
@@ -115,8 +113,7 @@ Variant 2, Wrap Carousel:
 <?php \dominus77\owlcarousel2\WrapCarousel::end() ?>
 ```
 
-Responsive
-----------
+## Responsive
 ```
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
@@ -143,8 +140,7 @@ Responsive
 ]); ?>
 ```
 
-Animate
--------
+## Animate
 ```
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
@@ -159,8 +155,7 @@ Animate
 ]); ?>
 ```
 
-Autoplay
---------
+## Autoplay
 ```
 <?= \dominus77\owlcarousel2\Carousel::widget([
     'items' => $this->render('@dominus77/owlcarousel2/example/_items'), // example
@@ -186,14 +181,11 @@ Autoplay
 <a class="btn btn-primary stop">Stop</a>
 ```
 
-Demo
------
+## Demo
 Pleas, check the [Demos](https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html)
 
-More Information
------
+## More Information
 Please, check the [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/)
 
-License
------
+## License
 The BSD License (BSD). Please see [License File](https://github.com/Dominus77/yii2-owl-carousel-2/blob/master/LICENSE.md) for more information.

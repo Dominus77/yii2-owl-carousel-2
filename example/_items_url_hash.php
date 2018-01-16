@@ -1,7 +1,9 @@
 <?php
+
 use dominus77\owlcarousel2\assets\ExampleAsset;
 
 /* @var $this \yii\web\View */
+
 ExampleAsset::register($this);
 ?>
 
