@@ -11,8 +11,8 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "~2.0.0",
-        "bower-asset/owlcarousel2": "*",
+        "yiisoft/yii2": "~2.0",
+        "bower-asset/owlcarousel2": "~2.3",
         "daneden/animate.css": "^3.5"
     },
     "autoload": {
