@@ -18,7 +18,7 @@ class OwlCarouselAsset extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@bower/owlcarousel2/dist';
+    public $sourcePath = '@bower/owl-carousel2/dist';
 
     /**
      * @var array
