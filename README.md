@@ -13,13 +13,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require dominus77/yii2-owl-carousel-2 "*"
+php composer.phar require dominus77/yii2-owl-carousel-2
 ```
 
 or add
 
 ```
-"dominus77/yii2-owl-carousel-2": "*"
+"dominus77/yii2-owl-carousel-2": "^1.0"
 ```
 
 to the require section of your `composer.json` file.
