@@ -188,4 +188,4 @@ Pleas, check the [Demos](https://owlcarousel2.github.io/OwlCarousel2/demos/demos
 Please, check the [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/)
 
 ## License
-The BSD License (BSD). Please see [License File](https://github.com/Dominus77/yii2-owl-carousel-2/blob/master/LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/Dominus77/yii2-owl-carousel-2/blob/master/LICENSE.md) for more information.
