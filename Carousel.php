@@ -35,7 +35,7 @@ class Carousel extends Widget
     public $containerOptions = [];
 
     /**
-     * @var string
+     * @var string|array
      */
     public $items = '';
 
@@ -73,7 +73,7 @@ class Carousel extends Widget
         if (!empty($this->items)) {
             $this->registerAssets();
             echo Html::beginTag($this->tag, $this->containerOptions) . PHP_EOL;
-            echo $this->items . PHP_EOL;
+            $this->renderItems();
             echo Html::endTag($this->tag) . PHP_EOL;
         }
     }
@@ -85,6 +85,19 @@ class Carousel extends Widget
     {
         $options = ArrayHelper::merge([], $this->clientOptions);
         return json_encode($options);
+    }
+    
+    /**
+     * @return void
+     */
+    public function renderItems() {
+        $items = $this->items;
+        
+        if(is_array($items)) {
+            $items = implode(PHP_EOL, $items);
+        }
+        
+        echo $items;
     }
 
     /**
